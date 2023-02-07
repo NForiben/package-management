@@ -13,3 +13,8 @@ mv ./kubectl ~/.local/bin/kubectl
 kubectl version --client
 
 sudo su - ec2-user
+
+# copy the .kube/config file from the master node and copy it into a new directory on the manager node called .kube/config
+# mkdir .kube
+# vi .kube/config
+# You'll now be able to manage the cluster from the manager node instead on the master node 
